@@ -1,48 +1,175 @@
 ---
 import '../styles/global.css';
+
+const services = [
+  {
+    title: '淨零策略培力',
+    text: '協助企業建立淨零轉型觀念，從內部教育、策略共識到行動規劃，陪伴組織踏出第一步。',
+  },
+  {
+    title: '碳資產管理',
+    text: '從碳盤查、減碳路徑到碳風險評估，協助企業把碳資料轉化為管理決策依據。',
+  },
+  {
+    title: 'ESG 永續服務',
+    text: '協助企業梳理永續議題、利害關係人溝通與永續揭露，建立可被看見的永續價值。',
+  },
+  {
+    title: '永續人才培育',
+    text: '提供企業內訓、公開課程與永續知識培力，協助組織建立長期自主推動能力。',
+  },
+];
+
+const posts = [
+  '企業為什麼需要開始做碳盤查？',
+  '中小企業 ESG 可以從哪裡開始？',
+  '碳費、碳權與碳管理的差異是什麼？',
+];
 ---
 
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>秘鍊永續協作</title>
+    <title>秘鍊永續協作｜MIDLian Sustainable Partnership</title>
   </head>
 
-  <body class="bg-zinc-950 text-white">
-    <section class="min-h-screen flex items-center justify-center px-6">
-      <div class="max-w-4xl text-center">
-        <p class="text-emerald-400 mb-4 tracking-[0.3em]">
-          MIDLian Sustainable Partnership
-        </p>
+  <body class="bg-[#0B1713] text-[#F4F1E8]">
+    <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-[#0B1713]/85 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="/" class="text-xl font-semibold tracking-wide text-[#D8B76A]">
+          秘鍊永續協作
+        </a>
 
-        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
-          攜手永續<br />
-          共創價值
-        </h1>
+        <nav class="hidden gap-8 text-sm text-[#F4F1E8]/80 md:flex">
+          <a href="#about" class="hover:text-[#D8B76A]">關於秘鍊</a>
+          <a href="#services" class="hover:text-[#D8B76A]">秘鍊服務</a>
+          <a href="#blog" class="hover:text-[#D8B76A]">永續揭秘</a>
+          <a href="#contact" class="hover:text-[#D8B76A]">聯絡我們</a>
+        </nav>
+      </div>
+    </header>
 
-        <p class="text-zinc-400 text-lg leading-relaxed mb-10">
-          秘鍊永續協作致力於協助企業邁向淨零與永續發展，
-          透過碳管理、ESG 與永續策略，
-          為這片土地注入更多溫暖與善意。
-        </p>
+    <main>
+      <section class="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
+        <div class="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-500/10 blur-3xl"></div>
 
-        <div class="flex gap-4 justify-center">
-          <a
-            href="#"
-            class="bg-emerald-500 hover:bg-emerald-400 transition px-6 py-3 rounded-xl font-medium"
-          >
-            了解服務
-          </a>
+        <div class="relative mx-auto grid max-w-6xl gap-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <div>
+            <p class="mb-5 tracking-[0.35em] text-[#D8B76A]">
+              MIDLian Sustainable Partnership
+            </p>
 
-          <a
-            href="#"
-            class="border border-zinc-700 hover:border-zinc-500 transition px-6 py-3 rounded-xl font-medium"
-          >
-            永續揭秘
+            <h1 class="mb-8 text-5xl font-semibold leading-tight md:text-7xl">
+              攜手永續，<br />
+              共創價值。
+            </h1>
+
+            <p class="max-w-2xl text-lg leading-8 text-[#F4F1E8]/70">
+              秘鍊永續協作陪伴企業從碳管理出發，逐步走向 ESG 與永續轉型，
+              讓每一份努力，都能為世界注入更多溫暖與善意。
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="#services" class="rounded-full bg-[#D8B76A] px-7 py-3 font-medium text-[#0B1713]">
+                了解服務
+              </a>
+              <a href="#contact" class="rounded-full border border-white/20 px-7 py-3 text-white/80">
+                聯絡秘鍊
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl">
+            <div class="mb-8 h-64 rounded-[1.5rem] bg-gradient-to-br from-emerald-700/50 via-[#12362B] to-[#D8B76A]/20"></div>
+            <p class="text-2xl font-medium leading-relaxed">
+              以專業陪伴企業，讓永續不只是報告，而是能真正落地的行動。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="border-y border-white/10 bg-[#10231C] px-6 py-24">
+        <div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p class="mb-3 text-[#D8B76A]">ABOUT MIDLian</p>
+            <h2 class="text-4xl font-semibold">關於秘鍊</h2>
+          </div>
+
+          <div class="space-y-6 text-lg leading-9 text-[#F4F1E8]/75">
+            <p>
+              秘鍊永續協作是一間以永續管理為核心的顧問品牌，
+              協助企業面對淨零轉型、碳管理與 ESG 揭露的挑戰。
+            </p>
+            <p>
+              我們相信，永續不是額外負擔，而是企業重新理解自身價值、
+              建立韌性與創造正向影響的起點。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div class="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p class="mb-3 text-[#D8B76A]">SERVICES</p>
+              <h2 class="text-4xl font-semibold">秘鍊服務</h2>
+            </div>
+            <p class="max-w-xl leading-7 text-[#F4F1E8]/65">
+              從教育培力、碳管理到永續揭露，依照企業不同階段，設計可執行的永續路徑。
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            {services.map((service) => (
+              <article class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-8 transition hover:-translate-y-1 hover:border-[#D8B76A]/50">
+                <h3 class="mb-4 text-2xl font-semibold text-[#D8B76A]">{service.title}</h3>
+                <p class="leading-8 text-[#F4F1E8]/70">{service.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="bg-[#F4F1E8] px-6 py-24 text-[#0B1713]">
+        <div class="mx-auto max-w-6xl">
+          <div class="mb-12">
+            <p class="mb-3 text-[#8A6A22]">INSIGHTS</p>
+            <h2 class="text-4xl font-semibold">永續揭秘</h2>
+            <p class="mt-5 max-w-2xl leading-8 text-black/60">
+              將複雜的 ESG、碳管理與永續趨勢，轉化為企業看得懂、用得上的知識。
+            </p>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-3">
+            {posts.map((post) => (
+              <a href="/blog" class="rounded-[1.5rem] bg-white p-7 shadow-sm transition hover:-translate-y-1">
+                <p class="mb-10 text-sm text-black/40">永續觀測站</p>
+                <h3 class="text-xl font-semibold leading-8">{post}</h3>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="px-6 py-24">
+        <div class="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-[#10231C] p-10 text-center md:p-16">
+          <p class="mb-3 text-[#D8B76A]">CONTACT</p>
+          <h2 class="mb-6 text-4xl font-semibold">一起讓永續開始落地</h2>
+          <p class="mx-auto mb-10 max-w-2xl leading-8 text-[#F4F1E8]/70">
+            無論是碳盤查、永續策略、教育訓練或 ESG 專案規劃，
+            都可以從一次對話開始。
+          </p>
+          <a href="mailto:midlian@midlian.com" class="rounded-full bg-[#D8B76A] px-8 py-3 font-medium text-[#0B1713]">
+            聯絡秘鍊
           </a>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-6 py-8 text-center text-sm text-white/45">
+      © 2026 MIDLian Sustainable Partnership Co., Ltd. All Rights Reserved.
+    </footer>
   </body>
 </html>
